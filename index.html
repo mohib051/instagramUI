@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="story-container">
+        <div class="circle-story">
+          
+        </div>
+    </div>
+  
+    <div class="container">
+      
+      <div id="post">
+        <div id="top">
+          <div id="left">
+            <div id="img">
+              <img
+                src= ${element.userprofile}
+                alt=""
+              />
+            </div>
+            <div id="left-details">
+              <h3>
+               ${element.username}
+                <span
+                  ><img src="./assets/icons8-blue-tick-48.png" alt=""
+                /></span>
+              </h3>
+              <div id="songDetails">
+               <i class="ri-map-pin-line"></i>
+                <h3>${element.userlocation}</h3>
+              </div>
+            </div>
+          </div>
+          <div id="right">
+            <button>Follow</button>
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </div>
+        <div id="mainImg">
+          <img
+            src=  ${element.userPost}
+            alt=""
+          /> 
+        <i id="mainHeart" class="ri-heart-fill"></i>
+        </div>
+        <div id="bottom">
+          <div id="bottomUp">
+            <!-- icons -->
+            <div id="icons">
+              <div>
+              <i id = ${index} class="ri-heart-fill"></i>
+              <span class="counter">${element.likeCount}</span>
+              </div>
+              <i id="comment" class="ri-chat-ai-line"></i>
+               <span>${element.commentCount}</span>
+              <i id="share" class="ri-send-plane-fill"></i>
+               <span>${element.shareCount}</span>
+            </div>
+            <img src="./assets/icons8-save-32.png" alt="" />
+          </div>
+          <p>
+            <b>${element.username} </b>${element.caption}
+          </p>
+          <h4>View all comments</h4>
+          <h5>${element.timeAgoUploaded} days ago</h5>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
